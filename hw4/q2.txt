@@ -1,0 +1,43 @@
+Px[a0,a1,a2,...ai,..] denotes the polynomial martix, where i is the power of X and ai is the power of the primitive element.
+If ai= -inf,then (alpha)^(ai)= 0 where alpha is primitive element in GF(2^m). And if ai= 0,then (alpha)^(ai)= 1.
+
+-----------Euclidean_algorithm Iteration 1-----------
+r = 1
+s(r) (x) = Px[ 12  0  14  13  0  11 ]
+t(r) (x) = Px[ 5  10  3  2  0 ]
+Q(r) (x) = Px[ 8  4 ]
+Lambda (x) = Px[ 0  11 ]
+A(r)(x) = [A11(x) A12(x) ; A21(x) A22(x)]
+A11(r) (x) = Px[ -Inf ]
+A12(r) (x) = Px[ 0 ]
+A21(r) (x) = Px[ -Inf  -Inf ]
+A22(r) (x) = Px[ 8  4 ]
+
+-----------Euclidean_algorithm Iteration 2-----------
+r = 2
+s(r) (x) = Px[ 5  10  3  2  0 ]
+t(r) (x) = Px[ 0  0  12  0 ]
+Q(r) (x) = Px[ 6  11 ]
+Lambda (x) = Px[ 0  14  12 ]
+A(r)(x) = [A11(x) A12(x) ; A21(x) A22(x)]
+A11(r) (x) = Px[ -Inf  -Inf ]
+A12(r) (x) = Px[ 8  4 ]
+A21(r) (x) = Px[ -Inf  -Inf  -Inf ]
+A22(r) (x) = Px[ 3  2  0 ]
+
+-----------Euclidean_algorithm Iteration 3-----------
+r = 3
+s(r) (x) = Px[ 0  0  12  0 ]
+t(r) (x) = Px[ 13  13  9 ]
+Q(r) (x) = Px[ 7  0 ]
+Lambda (x) = Px[ 0  14  11  14 ]
+A(r)(x) = [A11(x) A12(x) ; A21(x) A22(x)]
+A11(r) (x) = Px[ -Inf  -Inf  -Inf ]
+A12(r) (x) = Px[ 3  2  0 ]
+A21(r) (x) = Px[ -Inf  -Inf  -Inf  -Inf ]
+A22(r) (x) = Px[ 1  0  12  0 ]
+
+Error location Xi =  X^5  X^2  X^7 
+Error magnitude Yi =  alpha^5  alpha^11  alpha^1 
+
+Decoded codeword = (0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 )
